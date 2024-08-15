@@ -68,7 +68,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Rpungello\\LaravelRequestLogger\\LaravelRequestLoggerServiceProvider"
+                "RequestLogServiceProvider"
             ],
             "aliases": {
                 "LaravelRequestLogger": "Rpungello\\LaravelRequestLogger\\Facades\\LaravelRequestLogger"

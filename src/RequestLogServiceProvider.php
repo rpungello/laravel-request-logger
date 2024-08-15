@@ -6,7 +6,7 @@ use Rpungello\LaravelRequestLogger\Commands\LaravelRequestLoggerCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class LaravelRequestLoggerServiceProvider extends PackageServiceProvider
+class RequestLogServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -18,8 +18,6 @@ class LaravelRequestLoggerServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-request-logger')
             ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel_request_logger_table')
-            ->hasCommand(LaravelRequestLoggerCommand::class);
+            ->hasMigration('create_request_logs_table');
     }
 }
