@@ -13,14 +13,14 @@ class LogRequests
     /**
      * Handle an incoming request.
      *
-     * @param Closure(Request): (SymfonyResponse) $next
+     * @param  Closure(Request): (SymfonyResponse)  $next
      */
     public function handle(Request $request, Closure $next): Response
     {
         return $next($request);
     }
 
-     /**
+    /**
      * Handle tasks after the response has been sent to the browser.
      */
     public function terminate(Request $request, Response $response): void

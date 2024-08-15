@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'class' => \Rpungello\LaravelRequestLogger\EloquentRequestLogger::class
+    'class' => \Rpungello\LaravelRequestLogger\EloquentRequestLogger::class,
 ];

@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class LogEntry extends Model
 {
     protected $table = 'request_logs';
+
     protected $fillable = [
         'user_id',
         'server',
