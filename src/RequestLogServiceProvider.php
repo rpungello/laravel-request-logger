@@ -2,7 +2,6 @@
 
 namespace Rpungello\LaravelRequestLogger;
 
-use Rpungello\LaravelRequestLogger\Commands\LaravelRequestLoggerCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
