@@ -1,6 +1,5 @@
 <?php
 
-// config for Rpungello/LaravelRequestLogger
 return [
-
+    'class' => \Rpungello\LaravelRequestLogger\EloquentRequestLogger::class
 ];

@@ -23,6 +23,11 @@ return new class extends Migration
             $table->string('user_agent')->nullable();
             $table->string('session_id')->nullable();
 
+            $table->unsignedSmallInteger('response_status_code')->nullable();
+            $table->text('response_headers')->nullable();
+            $table->text('response_body')->nullable();
+            $table->unsignedSmallInteger('response_time')->nullable();
+
             $table->timestamps();
 
             $table->index([

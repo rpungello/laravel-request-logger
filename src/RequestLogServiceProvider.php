@@ -16,7 +16,7 @@ class RequestLogServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-request-logger')
-            ->hasConfigFile()
+            ->hasConfigFile('request-logger')
             ->hasMigration('create_request_logs_table');
     }
 }
